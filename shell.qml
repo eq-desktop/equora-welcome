@@ -6,6 +6,7 @@ import qs
 import qs.pages
 
 PanelWindow {
+    property bool developerMode: false
     id: panelWindow
     WlrLayershell.layer: WlrLayer.Overlay
     WlrLayershell.keyboardFocus: WlrKeyboardFocus.Exclusive
@@ -86,7 +87,7 @@ PanelWindow {
                     country
                 ]
             }
-            active: true
+            active: panelWindow.developerMode
             sourceComponent: setup
         }
     }

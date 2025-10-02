@@ -7,17 +7,23 @@ It helps new users quickly configure essential settings and get started.
 - First-time setup made simple  
 - Language and region selection  
 - Account and personalization options  
-- Links to documentation 
+- Links to documentation
+
+## Screenshots
+
+![Equora Welcome Screenshot](./images/welcome.png)
+![Equora Language Screenshot](./images/lang.png)
+![Equora Country Screenshot](./images/country.png)
 
 ## Usage
 Equora Welcome runs automatically after installation.  
-You can also launch it manually (without changes being applied) with:
+You can also launch it manually with:
 
 ```bash
 equora-welcome
-````
+```
 
-Which will output a file called output.json with all the options you chose
+Which will output an `output.json` file
 
 ## License
 
