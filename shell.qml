@@ -36,7 +36,7 @@ PanelWindow {
             id: image
             anchors.fill: parent
             opacity: 0
-            source: Qt.resolvedUrl(Quickshell.shellDir + "/Star-Lens.jpg")
+            source: Qt.resolvedUrl(Quickshell.shellDir + "/media/" + Config.image)
             Component.onCompleted: {
                 image.opacity = 1
             }
@@ -74,7 +74,7 @@ PanelWindow {
             active: true
             sourceComponent: welcome
         }
-        Timer { running: true; interval: 6000; onTriggered: {setupLoader.active = true } }
+        Timer { running: true; interval: 5000; onTriggered: {setupLoader.active = true } }
         Loader {
             id: setupLoader
             anchors.fill: parent

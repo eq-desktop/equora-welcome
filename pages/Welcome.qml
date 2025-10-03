@@ -26,7 +26,6 @@ Item {
             blur = 0
             opacity = 1
             shadowOpacity = 1
-            flicker.start()
         }
         font.pixelSize: 50
         font.family: sfPro.font.family
@@ -48,6 +47,14 @@ Item {
                 welcome.blur = 1 
                 welcome.shadowOpacity = 1 
                 welcome.opacity = 0
+            }
+        }
+
+        Timer {
+            interval: 2000 
+            running: true 
+            onTriggered: {
+                flicker.start()
             }
         }
 
